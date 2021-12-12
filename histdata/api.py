@@ -130,7 +130,8 @@ def download_hist_data(year='2016',
             'platform': platform,
             'timeframe': time_frame,
             'fxpair': pair.upper()}
-    r = requests.post(url='https://www.histdata.com/get.php',
+    # r = requests.post(url='https://www.histdata.com/get.php',
+    r = requests.post(url='http://www.histdata.com/get.php',
                       data=data,
                       headers=headers)
 
